@@ -114,6 +114,7 @@
         font-weight: 600;
         font-family: "Cormorant", serif;
       }
+
       .aboutUsDescription {
         padding: 30px;
         font-size: 1.25rem;
@@ -123,15 +124,18 @@
         font-family: "Proza Libre", sans-serif;
         max-width: 50vw;
       }
+
       .aboutUsImage {
         width: 40vw;
         height: auto;
         border-radius: 0.5rem;
         margin: 30px;
       }
+
       .aboutUsImageContainer {
         display: flex;
       }
+
       .imgFit {
         width: 25vw;
         height: 25vw;
@@ -140,38 +144,49 @@
         background-repeat: no-repeat;
         background-size: cover;
       }
+
       .webImg {
         background-image: url("assets/3.webp");
       }
+
       .mobileImg {
-        background-image: url("assets/4.webp");
+        background-image: url("assets/6.webp");
       }
+
       .softwareImg {
         background-image: url("assets/5.webp");
       }
+
       .cloudImg {
-        background-image: url("assets/6.webp");
+        background-image: url("assets/4.webp");
       }
+
       .iotImg {
         background-image: url("assets/7.webp");
       }
+
       .itConsultingImg {
         background-image: url("assets/8.webp");
       }
+
       .bgColor {
         background-color: rgb(210, 228, 210);
       }
+
       @media only screen and (max-width: 1060px) {
         .aboutUsImageContainer {
           display: block;
         }
+
         .aboutUsDescription {
           max-width: 100vw;
         }
+
         .aboutUsImage {
           width: 80%;
           margin: 10%;
         }
+
         .imgFit {
           width: 70vw;
           height: 70vw;
@@ -183,18 +198,22 @@
           margin-bottom: 5vw;
           margin-top: 5vw;
         }
+
         .changeFlex {
           flex-direction: column;
         }
+
         .sloganTitle {
           font-size: 2.5rem;
           line-height: 3rem;
           /* height: calc(158px); */
           width: 75%;
         }
+
         .sloganText {
           width: 75%;
         }
+
         .sloganTextContainer {
           height: 80vh;
         }
@@ -215,7 +234,7 @@
       <!-- <img class="background-img" src="1.webp" alt="experience" /> -->
     </section>
     <section class="aboutUsContainer" id="aboutUsContainer">
-      <div>
+      <div style="height: 100vh">
         <h2 class="commonTitle">About us</h2>
         <div class="aboutUsImageContainer">
           <p class="aboutUsDescription">
@@ -245,22 +264,52 @@
         </h2>
         <div class="d-flex flex-wrap mb-3">
           <div class="p-xl-5 col">
-            <div class="thumbnail imgFit webImg"></div>
+            <div
+              class="thumbnail imgFit webImg d-flex justify-content-center align-items-end">
+              <p class="p-2 bg-secondary-subtle rounded-1 fw-bold">
+                Web Development
+              </p>
+            </div>
           </div>
           <div class="p-xl-5 col">
-            <div class="thumbnail imgFit mobileImg"></div>
+            <div
+              class="thumbnail imgFit mobileImg d-flex justify-content-center align-items-end">
+              <p class="p-2 bg-secondary-subtle rounded-1 fw-bold">
+                Mobile App Development
+              </p>
+            </div>
           </div>
           <div class="p-xl-5 col">
-            <div class="thumbnail imgFit softwareImg"></div>
+            <div
+              class="thumbnail imgFit softwareImg d-flex justify-content-center align-items-end">
+              <p class="p-2 bg-secondary-subtle rounded-1 fw-bold">
+                Software Solution
+              </p>
+            </div>
           </div>
           <div class="p-xl-5 col w-100">
-            <div class="thumbnail imgFit cloudImg"></div>
+            <div
+              class="thumbnail imgFit cloudImg d-flex justify-content-center align-items-end">
+              <p class="p-2 bg-secondary-subtle rounded-1 fw-bold">
+                Cloud Computing
+              </p>
+            </div>
           </div>
           <div class="p-xl-5 col w-100">
-            <div class="thumbnail imgFit iotImg"></div>
+            <div
+              class="thumbnail imgFit iotImg d-flex justify-content-center align-items-end">
+              <p class="p-2 bg-secondary-subtle rounded-1 fw-bold">
+                IOT Solution
+              </p>
+            </div>
           </div>
           <div class="p-xl-5 col w-100">
-            <div class="thumbnail imgFit itConsultingImg"></div>
+            <div
+              class="thumbnail imgFit itConsultingImg d-flex justify-content-center align-items-end">
+              <p class="p-2 bg-secondary-subtle rounded-1 fw-bold">
+                IT Consulting
+              </p>
+            </div>
           </div>
         </div>
       </div>
