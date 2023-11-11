@@ -1,0 +1,276 @@
+body {
+    margin: 0;
+  }
+
+  .background-img {
+    position: relative;
+    width: 100%;
+    opacity: 0.4;
+    z-index: 0;
+    margin-top: -15%;
+  }
+
+  .sloganTitle {
+    color: rgb(17, 24, 39);
+    font-family: Cormorant, serif;
+    font-size: 3.75rem;
+    line-height: 5rem;
+    width: 50%;
+    min-height: calc(34px);
+    font-weight: 800;
+    text-align: center;
+    margin: 0;
+    animation: titleParallax 1s;
+  }
+
+  .sloganTextContainer {
+    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    min-height: calc(34px);
+    height: 100vh;
+  }
+
+  .sloganTextContainer::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("assets/1.webp");
+    opacity: 0.4;
+  }
+
+  .sloganText {
+    color: rgb(17, 24, 39);
+    font-family: "Proza Libre", sans-serif;
+    font-weight: 400;
+    font-size: 1.75rem;
+    line-height: 2rem;
+    font-weight: 400;
+    width: 50%;
+    min-height: calc(34px);
+    text-align: center;
+    animation: titleParallax 1s;
+
+  }
+
+  .exploreMoreBtn {
+    box-shadow: none;
+    background-color: rgb(77, 75, 55);
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    text-decoration: inherit;
+    font-family: "Proza Libre", sans-serif;
+    transition: 0.5s;
+    cursor: pointer;
+    animation: titleParallax 1s;
+
+  }
+
+  .exploreMoreBtn:hover {
+    background-color: rgb(134, 131, 95);
+    color: rgb(235, 235, 235);
+  }
+
+  .companyLogo {
+    width: 80px;
+    height: auto;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    padding: 5px;
+  }
+
+  .aboutUsContainer {
+    background-color: rgb(245, 194, 142);
+    margin: 0;
+    display: flex;
+    /* flex-wrap: wrap; */
+  }
+
+  .commonTitle {
+    margin: 0;
+    padding: 30px 0 0 30px;
+    font-size: 2.75rem;
+    font-weight: 600;
+    font-family: "Cormorant", serif;
+  }
+
+  .aboutUsDescription {
+    padding: 30px;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 400;
+    color: rgb(17, 24, 39);
+    font-family: "Proza Libre", sans-serif;
+    max-width: 50vw;
+  }
+
+  .aboutUsText {
+    height: 100vh;
+    animation: imageParallax 1s;
+  }
+
+  .aboutUsImage {
+    width: 40vw;
+    height: auto;
+    border-radius: 0.5rem;
+    margin: 30px;
+  }
+
+  .aboutUsImageContainer {
+    display: flex;
+  }
+
+  .imgFit {
+    width: 25vw;
+    height: 25vw;
+    border-radius: 0.5rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: imageParallax 1s;
+  }
+
+  .webImg {
+    background-image: url("assets/3.webp");
+    animation: imageParallax 1s;
+  }
+
+  .mobileImg {
+    background-image: url("assets/6.webp");
+    animation: imageParallax 1s;
+  }
+
+  .softwareImg {
+    background-image: url("assets/5.webp");
+    animation: imageParallax 1s;
+  }
+
+  .cloudImg {
+    background-image: url("assets/4.webp");
+    animation: imageParallax 1s;
+  }
+
+  .iotImg {
+    background-image: url("assets/7.webp");
+    animation: imageParallax 1s;
+  }
+
+  .itConsultingImg {
+    background-image: url("assets/8.webp");
+    animation: imageParallax 1s;
+  }
+
+  .background-img-contact {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("assets/14.jpg");
+  }
+
+  .bgColor {
+    background-color: rgb(210, 228, 210);
+  }
+
+  textarea:focus,
+  input:focus {
+    outline: none;
+  }
+
+  #nameInvalid, #numberInvalid, #messageInvalid, #invalidData {
+    display: none;
+  }
+
+  input {
+    font-family: "Proza Libre", sans-serif;
+  }
+
+  .forTextArea {
+    resize: none;
+    width: 50vw;
+    height: 40vh;
+  }
+
+  @keyframes titleParallax {
+    from {
+      opacity: 0.5;
+      transform: translateY(50%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+
+  @keyframes imageParallax {
+    from {
+      transform: translateY(30%);
+    }
+    to {
+      transform: translateY(0%);
+    }
+  }
+
+  @media only screen and (max-width: 1060px) {
+    .aboutUsImageContainer {
+      display: block;
+    }
+
+    .aboutUsDescription {
+      max-width: 100vw;
+    }
+
+    .aboutUsImage {
+      width: 80%;
+      margin: 10%;
+    }
+
+    .imgFit {
+      width: 70vw;
+      height: 70vw;
+      border-radius: 0.5rem;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-left: 15vw;
+      margin-bottom: 5vw;
+      margin-top: 5vw;
+    }
+
+    .changeFlex {
+      flex-direction: column;
+    }
+
+    .sloganTitle {
+      font-size: 2.5rem;
+      line-height: 3rem;
+      /* height: calc(158px); */
+      width: 75%;
+    }
+
+    .sloganText {
+      width: 75%;
+    }
+
+    .sloganTextContainer {
+      height: 80vh;
+    }
+
+    .aboutUsText {
+      height: auto;
+    }
+  }

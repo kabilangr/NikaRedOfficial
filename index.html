@@ -4,229 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nika Red</title>
+    <link rel="stylesheet" href="style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous" />
     <link rel="icon" href="assets/nikaRedLogo.png" />
-    <style>
-      body {
-        margin: 0;
-      }
-
-      .background-img {
-        position: relative;
-        width: 100%;
-        opacity: 0.4;
-        z-index: 0;
-        margin-top: -15%;
-      }
-
-      .sloganTitle {
-        color: rgb(17, 24, 39);
-        font-family: Cormorant, serif;
-        font-size: 3.75rem;
-        line-height: 5rem;
-        width: 50%;
-        min-height: calc(34px);
-        font-weight: 800;
-        text-align: center;
-        margin: 0;
-      }
-
-      .sloganTextContainer {
-        /* position: absolute; */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        z-index: 1;
-        min-height: calc(34px);
-        height: 100vh;
-        /* width: 100vw; */
-      }
-
-      .sloganTextContainer::before {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-image: url("assets/1.webp");
-        opacity: 0.4;
-      }
-
-      .sloganText {
-        color: rgb(17, 24, 39);
-        font-family: "Proza Libre", sans-serif;
-        font-weight: 400;
-        font-size: 1.75rem;
-        line-height: 2rem;
-        font-weight: 400;
-        width: 50%;
-        min-height: calc(34px);
-        text-align: center;
-      }
-
-      .exploreMoreBtn {
-        box-shadow: none;
-        background-color: rgb(77, 75, 55);
-        color: rgb(255, 255, 255);
-        border-radius: 8px;
-        padding: 0.75rem 1rem;
-        font-size: 1.25rem;
-        line-height: 1.75rem;
-        text-decoration: inherit;
-        font-family: "Proza Libre", sans-serif;
-        transition: 0.5s;
-        cursor: pointer;
-      }
-
-      .exploreMoreBtn:hover {
-        background-color: rgb(134, 131, 95);
-        color: rgb(235, 235, 235);
-      }
-
-      .companyLogo {
-        width: 80px;
-        height: auto;
-        position: absolute;
-        top: 5px;
-        left: 5px;
-        padding: 5px;
-      }
-
-      .aboutUsContainer {
-        background-color: rgb(245, 194, 142);
-        margin: 0;
-        display: flex;
-        /* flex-wrap: wrap; */
-      }
-
-      .commonTitle {
-        margin: 0;
-        padding: 30px 0 0 30px;
-        font-size: 2.75rem;
-        font-weight: 600;
-        font-family: "Cormorant", serif;
-      }
-
-      .aboutUsDescription {
-        padding: 30px;
-        font-size: 1.25rem;
-        line-height: 1.75rem;
-        font-weight: 400;
-        color: rgb(17, 24, 39);
-        font-family: "Proza Libre", sans-serif;
-        max-width: 50vw;
-      }
-
-      .aboutUsText {
-        height: 100vh;
-      }
-
-      .aboutUsImage {
-        width: 40vw;
-        height: auto;
-        border-radius: 0.5rem;
-        margin: 30px;
-      }
-
-      .aboutUsImageContainer {
-        display: flex;
-      }
-
-      .imgFit {
-        width: 25vw;
-        height: 25vw;
-        border-radius: 0.5rem;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-
-      .webImg {
-        background-image: url("assets/3.webp");
-      }
-
-      .mobileImg {
-        background-image: url("assets/6.webp");
-      }
-
-      .softwareImg {
-        background-image: url("assets/5.webp");
-      }
-
-      .cloudImg {
-        background-image: url("assets/4.webp");
-      }
-
-      .iotImg {
-        background-image: url("assets/7.webp");
-      }
-
-      .itConsultingImg {
-        background-image: url("assets/8.webp");
-      }
-
-      .bgColor {
-        background-color: rgb(210, 228, 210);
-      }
-
-      @media only screen and (max-width: 1060px) {
-        .aboutUsImageContainer {
-          display: block;
-        }
-
-        .aboutUsDescription {
-          max-width: 100vw;
-        }
-
-        .aboutUsImage {
-          width: 80%;
-          margin: 10%;
-        }
-
-        .imgFit {
-          width: 70vw;
-          height: 70vw;
-          border-radius: 0.5rem;
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: cover;
-          margin-left: 15vw;
-          margin-bottom: 5vw;
-          margin-top: 5vw;
-        }
-
-        .changeFlex {
-          flex-direction: column;
-        }
-
-        .sloganTitle {
-          font-size: 2.5rem;
-          line-height: 3rem;
-          /* height: calc(158px); */
-          width: 75%;
-        }
-
-        .sloganText {
-          width: 75%;
-        }
-
-        .sloganTextContainer {
-          height: 80vh;
-        }
-
-        .aboutUsText {
-          height: auto;
-        }
-      }
-    </style>
+    <style></style>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="app.js"></script>
   </head>
   <body>
     <section>
@@ -330,6 +117,71 @@
         not let you sleep.
       </p>
       <p class="fw-normal text-center">- Dr. APJ Abdul Kalam</p>
+    </section>
+    <section
+      class="d-flex flex-column align-items-center justify-content-center h-100">
+      <h2>Contact Us</h2>
+      <div>
+        <label for="name" class="fw-bold">
+          <p id="invalidData" class="text-danger p-0 m-0">*Enter Valid Data</p>
+          <p class="p-0 m-0">Full Name</p>
+          <p id="nameInvalid" class="text-danger p-0 m-0">*Enter valid name</p>
+          <input
+            type="text"
+            class="p-2 mt-1 mb-2 pt-1 pb-1 border-0 bg-body-secondary rounded-1"
+            name="name"
+            required
+            placeholder="Eg: John Carter"
+            id="name" />
+        </label>
+        <br />
+        <label for="email" class="fw-bold">
+          Email <br />
+          <input
+            type="email"
+            class="p-2 mt-1 mb-2 pt-1 pb-1 border-0 bg-body-secondary rounded-1"
+            name="email"
+            required
+            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+            placeholder="Eg: abc@xyz.lyp"
+            id="email" />
+        </label>
+        <br />
+        <label for="number" class="fw-bold">
+          <p class="p-0 m-0">Contact</p>
+          <p id="numberInvalid" class="text-danger p-0 m-0">
+            *Enter valid Contact Details
+          </p>
+          <input
+            type="text"
+            class="p-2 mt-1 mb-2 pt-1 pb-1 border-0 bg-body-secondary rounded-1"
+            name="number"
+            required
+            placeholder="Eg: +91 9990001110"
+            id="number" />
+        </label>
+        <br />
+        <label for="message" class="fw-bold">
+          <p class="p-0 m-0">Message</p>
+          <p id="messageInvalid" class="text-danger p-0 m-0">
+            *Enter message 10-300 letters
+          </p>
+          <textarea
+            name="message"
+            placeholder="Describe your query here..."
+            required
+            class="p-2 mt-1 mb-2 pt-1 pb-1 forTextArea border-0 bg-body-secondary rounded-1"
+            id="message"></textarea>
+        </label>
+        <br />
+        <button
+          onclick="handleForm(); return false;"
+          class="border-0 fw-bold bg-dark text-white p-1 rounded-1">
+          Send
+        </button>
+        <br />
+        <br /><br />
+      </div>
     </section>
     <footer class="bgColor">
       <div class="d-flex w-100 p-5 justify-content-around changeFlex">
